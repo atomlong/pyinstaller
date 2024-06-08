@@ -5,12 +5,12 @@
 # Contributor: iboyperson <tjquillan at gmail dot com>
 # Contributor: Alessandro Pazzaglia <jackdroido at gmail dot com>
 pkgname=pyinstaller
-pkgver=6.7.0
+pkgver=6.8.0
 pkgrel=1
 pkgdesc="Bundles a Python application and all its dependencies into a single package"
 arch=('x86_64')
 url="https://www.pyinstaller.org"
-license=('custom')
+license=('LicenseRef-custom')
 depends=(
   'binutils'
   'pyinstaller-hooks-contrib'
@@ -32,7 +32,7 @@ checkdepends=(
 optdepends=('python-argcomplete: tab completion for CLI tools')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/pyinstaller/pyinstaller/archive/refs/tags/v$pkgver.tar.gz"
         'fortify-source-fix.diff')
-sha256sums=('6d09a050a1822e6f58bb18228fc3ed09dce9ccad0aa08087ba8dc92985129478'
+sha256sums=('28baf23b178e581ea3ca5002bd33c974a7044bd9d5ec0a4cc6464fee7d912eeb'
             '46f7cfd082570a3f4c138a868e55dc39deacccbff602ce7e70d033236566fa1b')
 
 prepare() {
